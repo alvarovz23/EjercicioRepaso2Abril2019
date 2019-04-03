@@ -3,11 +3,18 @@
   min-height: 100vh;
   border: 1px solid blue;
   box-sizing: border-box;
+  display: grid;
+  margin: 0 auto;
 }
 .contenedor header {
   width: 100%;
   min-height: 15%;
   border: 1px solid orange;
+}
+.contenedor aside {
+  width: 20%;
+  min-height: 70%;
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=estilos1.css.map */
