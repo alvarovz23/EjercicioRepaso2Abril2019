@@ -4,16 +4,22 @@
     border: 1px solid blue;
     box-sizing: border-box;
     display: grid;
+    grid-template-columns: 20% auto 20%;
     margin: 0 auto;
     header {
-        width: 100%;
+        grid-column: 1/4;
         min-height: 15%;
         border: 1px solid orange;
     }
-    aside {
-        width: 20%;
+    .aside1 {
+        grid-column: 1/2;
         min-height: 70%;
         border: 1px solid red;
+    }
+    main {
+        grid-column: 2/3;
+        min-height: 70%;
+        border: 1px solid purple;
     }
 
 }
