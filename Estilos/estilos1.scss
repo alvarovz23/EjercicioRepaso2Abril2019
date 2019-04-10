@@ -26,5 +26,10 @@
         min-height: 70%;
         border: 1px solid yellow;
     }
+    footer {
+        grid-column: 1/4;
+        min-height: 15%;
+        border: 1px solid green;
+    }
 
 }
