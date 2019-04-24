@@ -1,43 +1,59 @@
+@mixin bordersgenerales() {
+    border: 1px solid ghostwhite;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
 .contenedor {
     width: 80vw;
     min-height: 100vh;
-    border: 1px solid blue;
-    box-sizing: border-box;
+    @include bordersgenerales();
     display: grid;
     grid-template-columns: 20% auto 20%;
     margin: 0 auto;
     header {
         grid-column: 1/4;
         min-height: 15vh;
-        border: 1px solid orange;
+        @include bordersgenerales();
     }
     .contenidocomplementario1 {
         grid-column: 1/4;
         min-height: 6vh;
-        border: 1px solid burlywood;
-        box-sizing: border-box;
+        @include bordersgenerales();
         font-size: 1.3em;
         font-weight: bold;
     }
     .aside1 {
         grid-column: 1/2;
         min-height: 70vh;
-        border: 1px solid red;
+        @include bordersgenerales();
     }
     main {
         grid-column: 2/3;
         min-height: 70vh;
-        border: 1px solid purple;
+        @include bordersgenerales();
     }
     .aside2 {
         grid-column: 3/4;
         min-height: 70vh;
-        border: 1px solid yellow;
+        @include bordersgenerales();
+    }
+    .contenidocomplementario2 {
+        grid-column: 1/4;
+        min-height: 6vh;
+        @include bordersgenerales();
+        font-size: 1.3em;
+        font-weight: bold;
     }
     footer {
         grid-column: 1/4;
         min-height: 1vh;
-        border: 1px solid green;
+        @include bordersgenerales();
     }
 
 }
