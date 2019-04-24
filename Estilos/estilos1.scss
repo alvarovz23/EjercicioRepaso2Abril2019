@@ -8,27 +8,35 @@
     margin: 0 auto;
     header {
         grid-column: 1/4;
-        min-height: 15%;
+        min-height: 15vh;
         border: 1px solid orange;
+    }
+    .contenidocomplementario1 {
+        grid-column: 1/4;
+        min-height: 6vh;
+        border: 1px solid burlywood;
+        box-sizing: border-box;
+        font-size: 1.3em;
+        font-weight: bold;
     }
     .aside1 {
         grid-column: 1/2;
-        min-height: 70%;
+        min-height: 70vh;
         border: 1px solid red;
     }
     main {
         grid-column: 2/3;
-        min-height: 70%;
+        min-height: 70vh;
         border: 1px solid purple;
     }
     .aside2 {
         grid-column: 3/4;
-        min-height: 70%;
+        min-height: 70vh;
         border: 1px solid yellow;
     }
     footer {
         grid-column: 1/4;
-        min-height: 15%;
+        min-height: 1vh;
         border: 1px solid green;
     }
 
