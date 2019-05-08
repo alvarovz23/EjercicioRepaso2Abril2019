@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: 20% auto 20%;
     margin: 0 auto;
+    @media (min-width: 600px) {
     header {
         grid-column: 1/4;
         min-height: 15vh;
@@ -55,5 +56,48 @@
         min-height: 1vh;
         @include bordersgenerales();
     }
+    }
 
+    @media (max-width: 600px) {
+        header {
+            grid-column: 1/4;
+            min-height: 15vh;
+            @include bordersgenerales();
+        }
+        .contenidocomplementario1 {
+            grid-column: 1/4;
+            min-height: 6vh;
+            @include bordersgenerales();
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .aside1 {
+            grid-column: 1/4;
+            min-height: 70vh;
+            @include bordersgenerales();
+        }
+        main {
+            grid-column: 1/4;
+            min-height: 70vh;
+            @include bordersgenerales();
+        }
+        .aside2 {
+            grid-column: 1/4;
+            min-height: 70vh;
+            @include bordersgenerales();
+        }
+        .contenidocomplementario2 {
+            grid-column: 1/4;
+            min-height: 6vh;
+            @include bordersgenerales();
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        footer {
+            grid-column: 1/4;
+            min-height: 1vh;
+            @include bordersgenerales();
+        }    
+    }
 }
+
